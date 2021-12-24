@@ -44,6 +44,10 @@ class Signature:
         except Exception as e:
             print(f"Unable to get signature for {self.name}, {self.title}. [URL: {self.url}] (E: {e})")
             sys.exit(0)
+
+
+def qr_code(args):
+    return "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/QR_code_for_mobile_English_Wikipedia.svg/1200px-QR_code_for_mobile_English_Wikipedia.svg.png"
         
 
 parser = argparse.ArgumentParser()
@@ -88,7 +92,7 @@ else:
 
 try:
     t = Template(template)
-    template = t.render(cert_type=args.type.value, name=args.name.title(), cert_desc=cert_desc, signatures=args.signature)
+    template = t.render(cert_type=args.type.value, name=args.name.title(), cert_desc=cert_desc, signatures=args.signature, qr_code=qr_code(args))
 except Exception as e:
     print(f"Unable to render certificate template. (E: {e})")
     sys.exit(0)
