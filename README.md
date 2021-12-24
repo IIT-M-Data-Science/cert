@@ -1,7 +1,7 @@
 # cert
 CLI certificate PDF generation script. Made for IITM-POD
 
-*Note* The CLI doesn't support QR generation/verification, you must implement your own logic to fit your needs.
+**Note** The CLI doesn't support QR generation/verification, you must implement your own logic to fit your needs.
 # Templates
 
 Add your custom templates under `template` folder.
