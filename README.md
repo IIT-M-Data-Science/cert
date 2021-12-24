@@ -14,6 +14,7 @@ It supports two variants for no of signatures:
 - One: The signature will be centered, and the QR will be below the signature.
 - Two: The signature will on the either side, and the QR will be centered.
 # Example Usage
+Install [Weasyprint](https://doc.courtbouillon.org/weasyprint/stable/first_steps.html)
 
 Setup a virtualenv, and install the dependencies
 
