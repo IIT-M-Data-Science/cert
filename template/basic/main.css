@@ -199,14 +199,14 @@ html {
 
 .qr-code-mid {
     position: absolute;
-    top: 408px;
-    left: 172px;
-    width: 100px;
+    top: 360px;
+    left: 150px;
+    width: 144px;
 }
 
 .qr-code-mid-below {
     position: absolute;
     top: 524px;
-    left: 172px;
-    width: 100px;
+    left: 150px;
+    width: 144px;
 }
